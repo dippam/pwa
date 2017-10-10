@@ -8,9 +8,7 @@
     <body>
 	<div id="site">
 	    <header>
-		<div id="masthead">
-		    <h1><a href="/">Documenting Ireland: Parliament, People and Migration</a></h1>
-		</div>
+		<h1><a href="/">Documenting Ireland: Parliament, People and Migration</a></h1>
 		<nav class="primary">
 		    <ul>
 			<li>
@@ -25,15 +23,204 @@
 			<li><a href="/about">About</a></li>
 		    </ul>
 		</nav>
-		<nav class="primary" id="search">
-		    <form>
-			<fieldset>
-			    <input type="search" name="q"/>
-			</fieldset>
-		    </form>
-		</nav>
 	    </header>
-	    <div id="page">
+	    <div id="page" class="page search">
+		<!--LC Subjects
+		Family Collections-->
+		<form name="query">
+		    <fieldset>
+			<label>
+			    <input type="search" name="q"/>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Exact Match</span>
+			</label>
+		    </fieldset>
+		    <fieldset>
+			<legend>Collections</legend>
+			<label>
+			    <input type="checkbox"/> EPPI
+			</label>
+			<label>	    
+			    <input type="checkbox"/> IED
+			</label>
+			<label>
+			    <input type="checkbox"/> VMR
+			</label>
+		    </fieldset>
+		    <fieldset>
+			<legend>Date</legend>
+			<label>
+			    <span>From</span>
+			    <input type="date"/>
+			</label>
+			<label>
+			    <span>To</span>
+			    <input type="date"/>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Emigration</span>
+			</label> 
+			<label>
+			    <input type="checkbox"/>
+			    <span>Return</span>
+			</label>
+		    </fieldset>
+		    <fieldset>
+			<legend>Document Type</legend>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Select All</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Account</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Bill</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Report</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Command Paper</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Interview</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Diaries and Journals</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Family Papers</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Folklore, Song, Music</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Hansard</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Letters (Emigrants)</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Letters (Other)</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Births, Deaths, Marriages</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Newspapers Extracts</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Shipping Advertisements</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Shipping News</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Official Documents</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Periodical Extracts</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Statistics</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Will</span>
+			</label>
+		    </fieldset>
+		    <fieldset>
+			<legend>Demographic</legend>
+			<label>
+			    <input type="checkbox"/>
+			    Gender 
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Age Group</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Denomination</span>
+			</label>
+		    </fieldset>
+		    <fieldset>
+			<legend>Place</legend>
+			<label>
+			    <span>Placename</span>
+			    <input type="search"/>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Birthplace</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Childhood Residence</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Current Residence</span>
+			</label>
+			<label>
+			    <input type="checkbox"/>
+			    <span>Destination</span>
+			</label>
+		    </fieldset>
+		</form>
+		<div id="results">
+		    <table>
+			<thead>
+			    <tr>
+				<th>Code</th>
+				<th>Date</th>
+				<th>Title</th>
+				<!--<th>Source</th>-->
+				<th>Type</th>
+				<!--<th>Gender</th>
+				<th>Age Group</th>
+				<th>Denomination</th>-->
+				<th>Items</th>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			    </tr>
+			</tbody>
+		    </table>
+		</div>
+	    </div>
+	    <div id="page" class="page about">
 		<h1>DIPPAM</h1>
 		<p>DIPPAM is an online virtual archive of documents and sources relating to the history of Ireland, and its migration experience from the 18th to late 20th centuries.</p>
 		<div class="eppi">

@@ -2,7 +2,7 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 
 #site { display: grid; }
 
-#site > header { background: #ddd; margin: 0 0 1em 0; }
+#site > header { background: #ddd; }
 #site > header a { color: #000; text-decoration: none; }
 #site > header #masthead { margin: 1em; }
 #site > header #masthead h1 { font-weight: normal; margin: 0; }
@@ -16,10 +16,11 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > header nav#search form fieldset { border: 0; padding: 0; }
 #site > header nav#search form input[name=q] { font-size: 1em; padding: 0.5em; }
 
-#site #page { margin: 1em; }
+#site #page { }
 #site #page p { line-height: 1.6em; width: 40em; }
+.about#page { display: none; }
 
-#site > footer { border-top: 1px solid #999; margin-top: 1em; padding: 1em; }
+#site > footer { border-top: 1px solid #999; padding: 1em; }
 #site nav#sitemap { margin-bottom: 3em; }
 #site nav#sitemap ul { display: flex; justify-content: space-between; list-style: none; padding: 0; }
 #site nav#sitemap > ul > li { width: 20em;  }
@@ -32,3 +33,10 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > footer address { font-style: normal; }
 
 
+form[name=query] { background: #eee; border-right: 1px solid #ddd; float: left; padding: 1em; }
+form[name=query] fieldset { border: 0; margin: 0 0 1em 0; padding: 0; }
+form[name=query] fieldset legend { font-weight: bold; margin: 0 0 0.5em 0; } 
+form[name=query] fieldset label { display: block; margin-bottom: 0.25em; } 
+
+table { border-collapse: collapse; width: 80%; }
+table th { background: #DDD; padding: 1em; text-align: left; }
