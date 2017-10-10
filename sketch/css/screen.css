@@ -14,6 +14,8 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > header nav.primary > ul > li { display: inline-block; }
 #site > header nav.primary ul ul { display: none; font-size: 1em; }
 #site > header nav.primary li:hover ul { background: #000; display: block; position: absolute; width: 12em; }
+#site > header nav#search form fieldset { border: 0; padding: 0; }
+#site > header nav#search form input[name=q] { font-size: 1em; padding: 0.5em; }
 
 #site #page { margin: 1em; }
 #site #page p { line-height: 1.6em; width: 40em; }
