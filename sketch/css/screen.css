@@ -20,15 +20,16 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site #page { margin: 1em; }
 #site #page p { line-height: 1.6em; width: 40em; }
 
-#site > footer { border-top: 1px solid #222; }
-#site nav#sitemap { background: #AAA; padding: 1em; }
+#site > footer { border-top: 1px solid #999; margin-top: 1em; padding: 1em; }
+#site nav#sitemap { margin-bottom: 3em; }
 #site nav#sitemap ul { display: flex; justify-content: space-between; list-style: none; padding: 0; }
 #site nav#sitemap > ul > li { width: 20em;  }
 #site nav#sitemap ul ul { display: block; }
-#site nav#sitemap a { text-decoration: none; }
+#site nav#sitemap a { color: #000; display: inline-block; margin-bottom: 0.5em; text-decoration: none; }
+#site nav#sitemap > ul > li > a:first-child { font-weight: bold; margin-bottom: 1em; }
 #site > footer #sponsors { margin: 1em; }
 #site > footer #sponsors ul { list-style: none; padding: 0; }
 #site > footer #sponsors ul li { display: inline-block; }
-
+#site > footer address { font-style: normal; }
 
 
