@@ -6,7 +6,8 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > header a { color: #000; text-decoration: none; }
 #site > header h1 { display: inline-block; font: normal 1.5em/1.1em Arial; margin: 0; }
 #site > header h1 em { display: block; font-style: normal; font-weight: bold; }
-#site > header svg { background: black; height: 3em; margin: 0 1em 0 0; width: 3em; }
+#site > header svg { height: 3em; margin: 0.2em 1em -0.2em 0; width: 3em; }
+#site > header #logo #color { stop-color: #070; }
 #site > header nav ul { font-size: 1.1em; list-style: none; margin: 0; padding: 0; }
 #site > header nav li { display: inline-block; margin: 0 1em; }
 #site > header nav#search form fieldset { border: 0; padding: 0; }
