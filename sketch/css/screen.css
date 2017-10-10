@@ -24,14 +24,22 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > footer nav#sitemap a { color: #000; display: inline-block; margin-bottom: 0.5em; text-decoration: none; }
 #site > footer nav#sitemap > ul > li > a:first-child { font-weight: bold; margin-bottom: 1em; }
 
-#page.search #query { background: #f7f7f7; border-right: 1px solid #ddd; float: left; padding: 1em; }
+#page.search #query { background: #f7f7f7; border-right: 1px solid #ddd; float: left; padding: 1em; width: 21em; }
 #page.search #query fieldset { border: 0; margin: 0 0 1em 0; padding: 0; }
 #page.search #query legend { font-weight: bold; margin: 0 0 0.5em 0; } 
 #page.search #query label { display: block; }
-#page.search #query span { display: inline-block; margin: 0.2em 0; }
-#page.search #query input[type=search] { font-size: 1.1em; margin: 0 0 0.25em 0; padding: 0.25em; width: 100%; }
+#page.search #query span { display: inline-block; margin: 0.4em 0; }
+#page.search #query input + span { margin: 0.2em 0; }
+#page.search #query select,
+#page.search #query input[type=search] { font-size: 1em; margin: 0 0 0.2em 0; padding: 0.4em; width: 100%; }
+#page.search #query input[type=date] { font-size: 1em; padding: 0.4em 0.2em; width: 100%; }
+#page.search #query select[multiple] { height: auto; }
+#page.search #query .controls input[type=search] { margin: 0 0 0.3em 0; }
+#page.search #query .controls select { margin: 0 0; width: 15.5em; }
+#page.search #query .controls input[type=submit] { background: #060; border:0; color: #fff; font-size: 1em; padding: 0.5em 1em; }
 #page.search #query .range { margin: 0 0 0.5em 0; }
 #page.search #query .range label { display: inline-block; }
+#page.search #query .range label:first-child { margin-right: 1em; }
 #page.search #query .range span { display: block; }
-#page.search #results table { border-collapse: collapse; width: 80%; }
+#page.search #results table { border-collapse: collapse; width: 78%; }
 #page.search #results table th { background: #f7f7f7; padding: 1em; text-align: left; }

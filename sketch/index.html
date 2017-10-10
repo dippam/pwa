@@ -35,27 +35,31 @@
 		Family Collections-->
 		<form id="query">
 		    <fieldset>
-			<label>
+			<label class="controls">
 			    <input type="search" name="q"/>
-			</label>
-			<label>
-			    <input type="checkbox"/>
-			    <span>Exact Match</span>
+			    <select>
+				<option value="0">Fulltext</option>
+				<option value="1">Titles</option>
+				<option value="2">Exact Title</option>
+				<option value="3">Command No</option>
+				<option value="4">Paper No</option>
+			    </select>
+			    <input type="submit" value="Search"/>
 			</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset class="collections">
 			<legend>Collections</legend>
 			<label>
-			    <input type="checkbox"/>
-			    <span>EPPI</span>
+			    <input type="checkbox" name="collection[1]" checked/>
+			    <span>Enhanced Parliamentary Papers on Ireland</span>
 			</label>
 			<label>	    
-			    <input type="checkbox"/>
-			    <span>IED</span>
+			    <input type="checkbox" name="collection[2]" checked/>
+			    <span>Irish Emigration Database</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
-			    <span>VMR</span>
+			    <input type="checkbox" name="collection[3]" checked/>
+			    <span>Voices of Migration and Return</span>
 			</label>
 		    </fieldset>
 		    <fieldset id="date">
@@ -63,136 +67,154 @@
 			<div class="range">
 			    <label>
 				<span>From</span>
-				<input type="date"/>
+				<input type="date" name="date[from]"/>
 			    </label>
 			    <label>
 				<span>To</span>
-				<input type="date"/>
+				<input type="date" name="date[to]"/>
 			    </label>
 			</div>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="date[emigration]">
 			    <span>Emigration</span>
 			</label> 
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="date[return]"/>
 			    <span>Return</span>
 			</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset class="type">
 			<legend>Document Type</legend>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[1]" checked/>
 			    <span>Account</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[2]" checked/>
 			    <span>Bill</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[3]" checked/>
 			    <span>Report</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[4]" checked/>
 			    <span>Command Paper</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[5]" checked/>
 			    <span>Interview</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[6]" checked/>
 			    <span>Diaries and Journals</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[7]" checked/>
 			    <span>Family Papers</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[8]" checked/>
 			    <span>Folklore, Song, Music</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[9]" checked/>
 			    <span>Hansard</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[10]" checked/>
 			    <span>Letters (Emigrants)</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[11]" checked/>
 			    <span>Letters (Other)</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[12]" checked/>
 			    <span>Births, Deaths, Marriages</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[13]" checked/>
 			    <span>Newspapers Extracts</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[14]" checked/>
 			    <span>Shipping Advertisements</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[15]" checked/>
 			    <span>Shipping News</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[16]" checked/>
 			    <span>Official Documents</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[17]" checked/>
 			    <span>Periodical Extracts</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[18]" checked/>
 			    <span>Statistics</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="type[19]" checked/>
 			    <span>Will</span>
 			</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset class="demographic">
 			<legend>Demographic</legend>
 			<label>
-			    <input type="checkbox"/>
-			    Gender 
+			    <span>Gender</span>
+			    <select name="gender" multiple>
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+				<option value="3">Male/Female</option>
+				<option value="4">Female/Female</option>
+			    </select>
 			</label>
 			<label>
-			    <input type="checkbox"/>
 			    <span>Age Group</span>
+			    <select name="age" multiple>
+				<option value="30">30</option>
+				<option value="40">40</option>
+				<option value="50">50</option>
+				<option value="60">60</option>
+				<option value="70">70</option>
+				<option value="80">80</option>
+			    </select>
 			</label>
 			<label>
-			    <input type="checkbox"/>
 			    <span>Denomination</span>
+			    <select name="denomination" multiple>
+				<option value="1">Church of Ireland</option>
+				<option value="2">Roman Catholic</option>
+				<option value="3">Presbyterian</option>
+				<option value="4">Methodist</option>
+				<option value="5">Other</option>
+			    </select>
 			</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset class="place">
 			<legend>Place</legend>
 			<label>
 			    <span>Placename</span>
-			    <input type="search"/>
+			    <input type="search" name="placename"/>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="place[birthplace]"/>
 			    <span>Birthplace</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="place[childhood]"/>
 			    <span>Childhood Residence</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="place[current]"/>
 			    <span>Current Residence</span>
 			</label>
 			<label>
-			    <input type="checkbox"/>
+			    <input type="checkbox" name="place[destination]"/>
 			    <span>Destination</span>
 			</label>
 		    </fieldset>
@@ -204,7 +226,6 @@
 				<th>Code</th>
 				<th>Date</th>
 				<th>Title</th>
-				<!--<th>Source</th>-->
 				<th>Type</th>
 				<!--<th>Gender</th>
 				<th>Age Group</th>
@@ -214,9 +235,6 @@
 			</thead>
 			<tbody>
 			    <tr>
-				<td></td>
-				<td></td>
-				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
