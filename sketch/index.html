@@ -35,7 +35,7 @@
 	    <div id="page" class="page search">
 		<!--LC Subjects
 		Family Collections-->
-		<form name="query">
+		<form id="query">
 		    <fieldset>
 			<label>
 			    <input type="search" name="q"/>
@@ -48,25 +48,30 @@
 		    <fieldset>
 			<legend>Collections</legend>
 			<label>
-			    <input type="checkbox"/> EPPI
+			    <input type="checkbox"/>
+			    <span>EPPI</span>
 			</label>
 			<label>	    
-			    <input type="checkbox"/> IED
+			    <input type="checkbox"/>
+			    <span>IED</span>
 			</label>
 			<label>
-			    <input type="checkbox"/> VMR
+			    <input type="checkbox"/>
+			    <span>VMR</span>
 			</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset id="date">
 			<legend>Date</legend>
-			<label>
-			    <span>From</span>
-			    <input type="date"/>
-			</label>
-			<label>
-			    <span>To</span>
-			    <input type="date"/>
-			</label>
+			<div class="range">
+			    <label>
+				<span>From</span>
+				<input type="date"/>
+			    </label>
+			    <label>
+				<span>To</span>
+				<input type="date"/>
+			    </label>
+			</div>
 			<label>
 			    <input type="checkbox"/>
 			    <span>Emigration</span>
@@ -78,10 +83,6 @@
 		    </fieldset>
 		    <fieldset>
 			<legend>Document Type</legend>
-			<label>
-			    <input type="checkbox"/>
-			    <span>Select All</span>
-			</label>
 			<label>
 			    <input type="checkbox"/>
 			    <span>Account</span>

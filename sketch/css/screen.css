@@ -30,11 +30,15 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 #site > footer #sponsors ul li { display: inline-block; }
 #site > footer address { font-style: normal; }
 
-
-form[name=query] { background: #f7f7f7; border-right: 1px solid #ddd; float: left; padding: 1em; }
-form[name=query] fieldset { border: 0; margin: 0 0 1em 0; padding: 0; }
-form[name=query] fieldset legend { font-weight: bold; margin: 0 0 0.5em 0; } 
-form[name=query] fieldset label { display: block; margin-bottom: 0.25em; } 
+form#query { background: #f7f7f7; border-right: 1px solid #ddd; float: left; padding: 1em; }
+form#query fieldset { border: 0; margin: 0 0 1em 0; padding: 0; }
+form#query legend { font-weight: bold; margin: 0 0 0.5em 0; } 
+form#query label { display: block; }
+form#query span { display: inline-block; margin: 0.2em 0; }
+form#query input[type=search] { font-size: 1.1em; margin: 0 0 0.25em 0; padding: 0.25em; width: 100%; }
+form#query .range { margin: 0 0 0.5em 0; }
+form#query .range label { display: inline-block; }
+form#query .range span { display: block; }
 
 table { border-collapse: collapse; width: 80%; }
 table th { background: #f7f7f7; padding: 1em; text-align: left; }
