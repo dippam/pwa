@@ -1,0 +1,8 @@
+body { font:1em Roboto, Helvetica, Arial; margin: 0; }
+
+#site { display: grid; }
+
+#site > footer { border-top: 1px solid #222; }
+#site > footer #sponsors { margin: 1em; }
+#site > footer #sponsors ul { list-style: none; padding: 0; }
+#site > footer #sponsors ul li { display: inline-block; }
