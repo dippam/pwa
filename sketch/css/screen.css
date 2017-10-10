@@ -2,7 +2,26 @@ body { font:1em Roboto, Helvetica, Arial; margin: 0; }
 
 #site { display: grid; }
 
+#site > header { background: #ddd; margin: 0 0 1em 0; }
+#site > header a { color: #000; text-decoration: none; }
+#site > header #masthead { margin: 1em; }
+#site > header #masthead h1 { margin: 0; }
+#site > header #masthead h2 { font-weight: normal; margin: 0; }
+#site > header nav ul { font-size: 1.1em; list-style: none; margin: 0; padding: 0; }
+#site > header nav.primary { background: #333; }
+#site > header nav.primary a { color: #fff; display: block; padding: 1em; }
+#site > header nav.primary > ul { display: inline-block; }
+#site > header nav.primary > ul > li { display: inline-block; }
+#site > header nav.primary ul ul { display: none; font-size: 1em; }
+#site > header nav.primary li:hover ul { background: #000; display: block; position: absolute; width: 12em; }
+
+#site #page { margin: 1em; }
+#site #page p { line-height: 1.6em; width: 40em; }
+
 #site > footer { border-top: 1px solid #222; }
 #site > footer #sponsors { margin: 1em; }
 #site > footer #sponsors ul { list-style: none; padding: 0; }
 #site > footer #sponsors ul li { display: inline-block; }
+
+
+
